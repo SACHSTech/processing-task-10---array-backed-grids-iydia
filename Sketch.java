@@ -9,18 +9,27 @@ public class Sketch extends PApplet {
    * Description: An interactive grid with data contained within a 
    * two-dimenstional array.
    */
-  
+
+  // Variables
+  int CELL_WIDTH = 20;
+  int CELL_HEIGHT = 20;
+  int MARGIN = 5;
+  int ROW_COUNT = 10;
+  int COLUMN_COUNT = 10;
+  int SCREEN_WIDTH = (CELL_WIDTH + MARGIN) * COLUMN_COUNT + MARGIN;
+  int SCREEN_HEIGHT = (CELL_WIDTH + MARGIN) * COLUMN_COUNT + MARGIN;
+
   public void settings() {
     // Size call
-    size(500, 600);
+    size(SCREEN_WIDTH, SCREEN_HEIGHT);
   }
 
   public void setup() {
-    background(255,255,255);
+    background(0);
   }
 
   public void draw() {
-	  
+	  rect(0, 0, CELL_WIDTH, CELL_HEIGHT);
   }
 
   public void mousePressed(){
