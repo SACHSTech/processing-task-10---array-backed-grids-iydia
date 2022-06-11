@@ -29,9 +29,13 @@ public class Sketch extends PApplet {
   }
 
   public void draw() {
-	  rect(0, 0, CELL_WIDTH, CELL_HEIGHT);
+    for (int column = 0; column < COLUMN_COUNT; column++) {
+      for (int row = 0; row < ROW_COUNT; row++) {
+        rect(CELL_WIDTH*column + MARGIN*column, CELL_HEIGHT*row + MARGIN*row, CELL_WIDTH, CELL_HEIGHT);
+      }
+    }
   }
-
+  
   public void mousePressed(){
     
   }
