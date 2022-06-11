@@ -96,6 +96,31 @@ public class Sketch extends PApplet {
               intCellsSelected--;
             }
           }
+          
+          // 4.1: How many cells are selected in each row
+          for(int rc = 0; rc < ROW_COUNT; rc++){
+            intRowCellsSelected = 0;
+            for(int cc = 0; cc < COLUMN_COUNT; cc++){
+              if(intGrid[rc][cc] == 1){
+                intRowCellsSelected++;
+              }
+            }
+            // Print which row has how many cells selected
+            System.out.println("Row " + (rc + 1) + " has " + intRowCellsSelected + " cells selected.");
+          }
+          
+          // 4.2: How many cells are selected in each column
+          for(int c = 0; c < COLUMN_COUNT; c++){
+            intColumnCellsSelected = 0;
+            for(int rowc = 0; rowc < ROW_COUNT; rowc++){
+              if(intGrid[rowc][c] == 1){
+                intColumnCellsSelected++;
+              }
+            }
+            // Print which column has how many cells selected
+            System.out.println("Column " + (c + 1) + " has " + intColumnCellsSelected + " cells selected.");
+          }
+
           intGrid[row][column] = 1;
           // Modify it so that rather than just changing the block the user clicks on, also change the blocks of the squares next to the user's click.
           intGrid[row + 1][column] = 1;
