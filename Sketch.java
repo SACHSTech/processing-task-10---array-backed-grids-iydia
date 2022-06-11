@@ -60,6 +60,7 @@ public class Sketch extends PApplet {
       for (row = 0; row < ROW_COUNT; row++) {
         if (dist(MARGIN * (column + 1) + (column * CELL_WIDTH) + ROW_COUNT, MARGIN * (row + 1) + (row * CELL_HEIGHT) + COLUMN_COUNT, mouseX, mouseY) < COLUMN_COUNT ) {
           System.out.println("mouse coordinates: (" + mouseX + ", " + mouseY + "); grid coordinates: (row:" + row + ", column:" + column + ")");
+          intGrid[row][column] = 1;
         }
       }
     }
