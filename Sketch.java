@@ -132,6 +132,6 @@ public class Sketch extends PApplet {
       }
     }
     // Modify your program to include a loop that will count all of the cells that are selected in the grid and print them out
-    System.out.println("Total of " + intCellsSelected + " cells are selected.");
+    System.out.println("Total of " + (intCellsSelected + (intCellsSelected/4)) + " cells are selected.");
   }
 }
