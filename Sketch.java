@@ -21,6 +21,8 @@ public class Sketch extends PApplet {
   int column;
   int row;
   int intCellsSelected = 0;
+  int intRowCellsSelected = 0;
+  int intColumnCellsSelected = 0;
   // Array Variables
   int[][] intGrid;
 
