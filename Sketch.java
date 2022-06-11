@@ -3,24 +3,22 @@ import processing.core.PApplet;
 public class Sketch extends PApplet {
 	
   /**
-   * Called once at the beginning of execution, put your size all in this method
+   * Assignment: 5.12 Processing Task 10 - Array-backed grids
+   * Author: Lydia He
+   * Due: May 20, 11:59 PM
+   * Description: An interactive grid with data contained within a 
+   * two-dimenstional array.
    */
+  
   public void settings() {
-    // put your size call here
+    // Size call
     size(500, 600);
   }
 
-  /** 
-   * Called once at the beginning of execution.  Add initial set up
-   * values here i.e background, stroke, fill etc.
-   */
   public void setup() {
     background(255,255,255);
   }
 
-  /**
-   * Called repeatedly, anything drawn to the screen goes here
-   */
   public void draw() {
 	  
   }
